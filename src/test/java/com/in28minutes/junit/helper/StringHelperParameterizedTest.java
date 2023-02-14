@@ -20,8 +20,9 @@ public class StringHelperParameterizedTest {
 	
 	private String input;
 	private String expectedOutput;
-	
-	public StringHelperParameterizedTest(String input, String expectedOutput) {
+	//el constructor con los dos atributos
+
+	public StringHelperParameterizedTest(String expectedOutput, String input) {
 		this.input = input;
 		this.expectedOutput = expectedOutput;
 	}
@@ -29,8 +30,9 @@ public class StringHelperParameterizedTest {
 	@Parameters
 	public static Collection<String[]> testConditions() {
 		String expectedOutputs[][] = { 
-				{ "AACD", "CD" }, 
-				{ "ACD", "CD" } };
+				{ "CD", "AACD" },
+				{ "CD", "ACD" } };
+
 		return Arrays.asList(expectedOutputs);
 	}
 

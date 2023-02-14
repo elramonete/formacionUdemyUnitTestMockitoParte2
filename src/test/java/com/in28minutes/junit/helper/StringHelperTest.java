@@ -10,16 +10,18 @@ public class StringHelperTest {
 	// AACD => CD ACD => CD CDEF=>CDEF CDAA => CDAA
 
 	StringHelper helper;
-	
 	@Before
 	public void before(){
+
 		helper = new StringHelper();
 	}
 	
 
 	@Test
 	public void testTruncateAInFirst2Positions_AinFirst2Positions() {
-		assertEquals("CD", helper.truncateAInFirst2Positions("AACD"));
+		String result = helper.truncateAInFirst2Positions("AACD");
+		System.out.println(result);
+		assertEquals("CD", result);
 	}
 
 	@Test

@@ -2,6 +2,11 @@ package com.in28minutes.junit.helper;
 
 public class StringHelper {
 
+	/**
+	 * AACD ->  CD CDAA -> CDAA ACDB -> CDB
+	 * @param str
+	 * @return
+	 */
 	public String truncateAInFirst2Positions(String str) {
 		if (str.length() <= 2)
 			return str.replaceAll("A", "");

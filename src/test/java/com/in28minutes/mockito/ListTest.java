@@ -14,7 +14,7 @@ import org.junit.Test;
 import org.mockito.Mockito;
 
 public class ListTest {
-
+	//usamos java 1.8 para debuggear
 	@Test
 	public void letsMockListSize() {
 		List list = mock(List.class);

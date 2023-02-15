@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class StringHelperTest {
-
+//usamos java 1.8 para debuggear
 	// AACD => CD ACD => CD CDEF=>CDEF CDAA => CDAA
 
 	StringHelper helper;

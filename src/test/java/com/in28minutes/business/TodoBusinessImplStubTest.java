@@ -10,7 +10,7 @@ import com.in28minutes.data.api.TodoService;
 import com.in28minutes.data.stub.TodoServiceStub;
 
 public class TodoBusinessImplStubTest {
-
+	//usamos java 1.8 para debuggear
 	@Test
 	public void usingAStub() {
 		TodoService todoService = new TodoServiceStub();

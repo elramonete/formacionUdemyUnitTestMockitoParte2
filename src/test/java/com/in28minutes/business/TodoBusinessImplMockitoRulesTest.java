@@ -23,7 +23,7 @@ import org.mockito.junit.MockitoRule;
 import com.in28minutes.data.api.TodoService;
 
 public class TodoBusinessImplMockitoRulesTest {
-
+	//usamos java 1.8 para debuggear
 	@Rule
 	public MockitoRule mockitoRule = MockitoJUnit.rule();
 

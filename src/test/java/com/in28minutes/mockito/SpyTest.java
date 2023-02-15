@@ -1,9 +1,7 @@
 package com.in28minutes.mockito;
 
 import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.spy;
-import static org.mockito.Mockito.stub;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +9,7 @@ import java.util.List;
 import org.junit.Test;
 
 public class SpyTest {
-
+//usamos java 1.8 para debuggear
 	@Test
 	public void creatingASpyOnArrayList() {
 		List<String> listSpy = spy(ArrayList.class);

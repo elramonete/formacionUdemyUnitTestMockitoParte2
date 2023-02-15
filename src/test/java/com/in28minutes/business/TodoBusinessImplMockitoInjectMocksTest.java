@@ -17,12 +17,15 @@ import org.mockito.Captor;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.runners.MockitoJUnitRunner;
+
+
 
 import com.in28minutes.data.api.TodoService;
+import org.mockito.runners.MockitoJUnitRunner;
 
 @RunWith(MockitoJUnitRunner.class)
 public class TodoBusinessImplMockitoInjectMocksTest {
+	//usamos java 1.8 para debuggear
 	@Mock
 	TodoService todoService;
 
@@ -89,7 +92,7 @@ public class TodoBusinessImplMockitoInjectMocksTest {
 
 		todoBusinessImpl.deleteTodosNotRelatedToSpring("Ranga");
 		Mockito.verify(todoService).deleteTodo(stringArgumentCaptor.capture());
-
+		assertThat(stringArgumentCaptor.getAllValues().size(), is(1));
 		assertEquals("Learn to Dance", stringArgumentCaptor.getValue());
 	}
 }
